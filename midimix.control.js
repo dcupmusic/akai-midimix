@@ -29,7 +29,7 @@ function onMidiPort1(status, data1, data2)
 
 }
 
-
+test make bad
 
 
 function exit()

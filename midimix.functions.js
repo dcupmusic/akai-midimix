@@ -9,6 +9,13 @@ var parameters = {
  		}
  	},
 
+	envelope: function(data1, data2)
+ 	{
+ 		if(data1 >= this.offset && data1 < this.offset + 8 ){
+			cursorDevice.getEnvelopeParameter(data1 - (this.offset - 8)).set(data2,128);
+ 		}
+ 	},
+
 	pageScroll: function(data1, data2)
  	{
  		if(data1 == 33 && data2 != 0){

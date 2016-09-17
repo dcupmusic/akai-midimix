@@ -46,28 +46,15 @@ function init()
 
 function onMidiPort1(status, data1, data2)
 {
-	//Checks if the MIDI data is a CC
-	if (isChannelController(status))
-	{
-		//if it is, check if the CC is within our range
-		if (data1 >= CC_RANGE_LO && data1 <= CC_RANGE_HI)
-		{
-			//if it is, get the index of the CC in our userControls
-			//And set the value of the control to the value of our CC
-
-
-		}else{
 			//Running our control Functions
 			parameters.control(data1,data2)
       parameters.envelope(data1,data2)
       parameters.common(data1, data2)
       parameters.macro(data1,data2)
       parameters.pageScroll(data1, data2);
-			}
+
 	//Note Data
-	}else{
-    parameters.pageScroll(data1, data2);
-	}
+
 }
 
 

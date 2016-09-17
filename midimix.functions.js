@@ -1,10 +1,11 @@
 // functions.js
 var parameters = {
+	offset: 25
   ,
 	control: function(data1, data2)
  	{
- 		if(data1 >= 24 && data1 <= 31 ){
-			cursorDevice.getParameter(data1).set(data2,128);
+ 		if(data1 >= this.offset && data1 < this.offset + 8 ){
+			cursorDevice.getParameter(data1 - this.offset).set(data2,128);
  		}
  	},
 

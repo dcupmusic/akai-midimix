@@ -54,7 +54,7 @@ function onMidiPort1(status, data1, data2)
 		{
 			//if it is, get the index of the CC in our userControls
 			//And set the value of the control to the value of our CC
-	
+
 
 		}else{
 			//Running our control Functions

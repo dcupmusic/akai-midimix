@@ -35,7 +35,7 @@ function init()
   noteIn.setShouldConsumeEvents(false);
 
   //Creates an array of user controls with the proper amount of CC#s
-	
+
 
   //Creating a view onto the selected device
 	cursorDevice = host.createEditorCursorDevice(2);
@@ -54,8 +54,7 @@ function onMidiPort1(status, data1, data2)
 		{
 			//if it is, get the index of the CC in our userControls
 			//And set the value of the control to the value of our CC
-			var index = data1 - CC_RANGE_LO;
-			userControls.getControl(index).set(data2, 128);
+	
 
 		}else{
 			//Running our control Functions

@@ -61,6 +61,7 @@ function onMidiPort1(status, data1, data2)
 			parameters.control(data1,data2)
       parameters.envelope(data1,data2)
       parameters.common(data1, data2)
+      parameters.macro(data1,data2)
       parameters.pageScroll(data1, data2);
 			}
 	//Note Data

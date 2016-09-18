@@ -11,8 +11,8 @@ var parameters = {
 
 	envelope: function(data1, data2)
  	{
- 		if(data1 >= this.offset - 7 && data1 < this.offset){
-			cursorDevice.getEnvelopeParameter(data1 - (this.offset - 7)).set(data2,128);
+ 		if(data1 >= this.offset - 9 && data1 < this.offset){
+			cursorDevice.getEnvelopeParameter(data1 - (this.offset - 9)).set(data2,128);
  		}
  	},
 

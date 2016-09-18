@@ -26,7 +26,7 @@ var parameters = {
 	macro: function(data1, data2)
 	{
 		if(data1 >= (this.offset + 32) && data1 < (this.offset + 40)){
-			cursorDevice.getMacro(data1 - (this.offset +32)).set(data2,128);
+			cursorDevice.getMacro(macroIndex).getAmount().set(newVal, 128);
 		}
 	},
 	pageScroll: function(data1, data2) {

@@ -23,12 +23,13 @@ var parameters = {
 		}
 	},
 
-	macro: function(data1, data2)
-	{
-		if(data1 >= (this.offset + 32) && data1 < (this.offset + 40)){
-			cursorDevice.getMacro(macroIndex).getAmount().set(newVal, 128)
-		}
-	},
+	macro: function(data1, data2) {
+	    var macroIndex = data1 - (this.offset +32);
+
+	    if (macroIndex >= 0 && macroIndex < 8) {
+	         cursorDevice.getMacro(macroIndex).getAmount().set(data2, 128);
+	      }
+	   },
 	pageScroll: function(data1, data2) {
 if (data2 != 0) {
 if (data1 >= 33 && data1 <= 39)

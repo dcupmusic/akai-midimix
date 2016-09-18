@@ -11,15 +11,15 @@ var parameters = {
 
 	envelope: function(data1, data2)
  	{
- 		if(data1 >= this.offset - 8 && data1 < this.offset){
-			cursorDevice.getEnvelopeParameter(data1 - (this.offset - 8)).set(data2,128);
+ 		if(data1 >= this.offset - 7 && data1 < this.offset){
+			cursorDevice.getEnvelopeParameter(data1 - (this.offset - 7)).set(data2,128);
  		}
  	},
 
 	common: function(data1, data2)
 	{
-		if(data1 >= this.offset - 16 && data1 < this.offset -8){
-			cursorDevice.getCommonParameter(data1 - (this.offset - 16)).set(data2,128);
+		if(data1 >= this.offset - 17 && data1 < this.offset - 9){
+			cursorDevice.getCommonParameter(data1 - (this.offset - 17)).set(data2,128);
 		}
 	},
 
